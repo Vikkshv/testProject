@@ -20,7 +20,8 @@ p {
     margin: 0 0 15px 0;
 }
 
-H2, H1 {
+H2,
+H1 {
     font-family: "Gayathri", sans-serif;
     font-weight: 700;
     margin: 0 0 15px 0;
@@ -28,11 +29,11 @@ H2, H1 {
 
 input {
     width: 300px;
-	font-size: 13px;
-	padding: 6px 0 4px 10px;
-	border: 1px solid #cecece;
-	background: #F6F6f6;
-	border-radius: 8px;
+    font-size: 13px;
+    padding: 6px 0 4px 10px;
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 8px;
 }
 
 button {
@@ -60,7 +61,8 @@ button {
     margin: 0;
 }
 
-.main_line, .main_line-media {
+.main_line,
+.main_line-media {
     width: 100%;
     height: 1px;
     border-bottom: 1px solid #E6E6E6;
@@ -113,7 +115,7 @@ button {
     margin: 5px auto;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-} 
+}
 
 .header_icons-wrap {
     gap: 10px;
@@ -126,7 +128,8 @@ button {
     justify-content: center;
 }
 
-.header_logo-icon, .header_search-icon {
+.header_logo-icon,
+.header_search-icon {
     height: 24px;
     width: auto;
 }
@@ -193,7 +196,8 @@ button {
     gap: 5px;
 }
 
-.sidebar_links-img-wrap, .sidebar_links-img-wrap-media {
+.sidebar_links-img-wrap,
+.sidebar_links-img-wrap-media {
     display: flex;
     height: 26px;
     padding: 0 10px;
@@ -223,9 +227,9 @@ button {
 }
 
 @media (max-width: 1280px) {
-.header_search-icon-wrap {
-    display: none;
-}
+    .header_search-icon-wrap {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -257,8 +261,4 @@ button {
     .sidebar_links-img-wrap-media {
         display: none;
     }
-    }
-
-
-
-
+}
