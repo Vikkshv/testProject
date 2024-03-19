@@ -14,8 +14,35 @@ p {
     font-weight: 400;
     line-height: 2.25;
     letter-spacing: 0.25px;
-    font-family: 'thongterm',sans-serif;
+    font-family: "Gayathri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0 0 15px 0;
+}
+
+H2, H1 {
+    font-family: "Gayathri", sans-serif;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+input {
+    width: 300px;
+	font-size: 13px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	background: #F6F6f6;
+	border-radius: 8px;
+}
+
+button {
+    appearance: none;
+    border: 0;
+    border-radius: 8px;
+    background: #00b400;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
 }
 
 .page {
@@ -28,10 +55,16 @@ p {
     margin-left: auto;
 }
 
-.container {
-    max-width: 1000px;
+.main {
     width: 100%;
-    margin: auto;
+    margin: 0;
+}
+
+.main_line, .main_line-media {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #E6E6E6;
+    margin-bottom: 15px;
 }
 
 .header {
@@ -51,7 +84,8 @@ p {
     align-items: center;
     align-content: center;
     height: 52px;
-    margin: 0 15px 15px 15px;}
+    margin-bottom: 15px;
+}
 
 .header_menu-icon {
     cursor: pointer;
@@ -60,6 +94,15 @@ p {
     aspect-ratio: 1/1;
     top: 5px;
     position: relative;
+}
+
+.subtitle_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtitle_date {
+    color: #949494;
 }
 
 .line {
@@ -72,12 +115,18 @@ p {
     transition: all 0.2s ease-in-out;
 } 
 
+.header_icons-wrap {
+    gap: 10px;
+    justify-content: flex-end;
+    display: flex;
+}
+
 .header_logo-icon-wrap {
     display: flex;
     justify-content: center;
 }
 
-.header_logo-icon {
+.header_logo-icon, .header_search-icon {
     height: 24px;
     width: auto;
 }
@@ -92,4 +141,123 @@ p {
     width: 24px;
     height: 24px;
 }
+
+.main_content-wrap {
+    grid-template-columns: 160px 1fr;
+    display: grid;
+}
+
+.main_content-sidebar {
+    text-align: center;
+    margin-right: 20px;
+    position: relative;
+}
+
+.main_content-sidebar-border {
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 12px;
+}
+
+.main_content-sidebar-button {
+    position: relative;
+    width: 100%;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    height: 26px;
+    padding: 0 10px;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+}
+
+.sidebar_button_item {
+    width: 100%;
+    position: relative;
+    min-width: 35px;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0 0 0;
+    border: 0;
+    font-family: 'KondolarThai-Bold';
+    line-height: 1;
+    font-size: 15px;
+    font-weight: normal;
+    color: #727272;
+    background: transparent;
+}
+
+.sidebar_links-wrap {
+    display: flex;
+    gap: 5px;
+}
+
+.sidebar_links-img-wrap, .sidebar_links-img-wrap-media {
+    height: 26px;
+    padding: 0 10px;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main_content-sidebar-sticky {
+    position: sticky;
+    top: 60px;
+}
+
+.form {
+    margin: 20px 0;
+}
+
+.sidebar_links-img-wrap-media:hover {
+    box-shadow: 0 0 10px #dbdbdb;
+}
+
+.sidebar_links-img-wrap:hover {
+    box-shadow: 0 0 10px #dbdbdb;
+}
+
+@media (max-width: 1280px) {
+.header_search-icon-wrap {
+    display: none;
+}
+}
+
+@media (max-width: 768px) {
+    .main_content-sidebar {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .main_content-wrap {
+        display: block;
+    }
+
+    .main_content-sidebar-sticky {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+
+    .main_content-sidebar-border {
+        border-bottom: none;
+    }
+
+    .main_line-media {
+        display: none;
+    }
+
+    .sidebar_links-img-wrap-media {
+        display: none;
+    }
+    }
+
+
+
 
