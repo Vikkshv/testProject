@@ -194,14 +194,15 @@ button {
 }
 
 .sidebar_links-img-wrap, .sidebar_links-img-wrap-media {
+    display: flex;
     height: 26px;
     padding: 0 10px;
     border-radius: 25px;
     background-color: #fff;
     box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
-    display: flex;
     align-items: center;
     cursor: pointer;
+    min-width: 26px;
 }
 
 .main_content-sidebar-sticky {
