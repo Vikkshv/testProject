@@ -36,16 +36,18 @@ document.addEventListener('DOMContentLoaded', function() {
             e.target.value = formatPhoneNumber(e.target.value);
         }
     });
+
+    function handleSubmit(event) {
+        console.log()
+        if (sessionStorage.getItem('formSubmitted')) {
+          event.preventDefault();
+          document.getElementById('submitButton').disabled = true;
+          alert('Вы уже отправляли эту форму ранее.');
+        } else {
+          sessionStorage.setItem('formSubmitted', 'true');
+        }
+      }
+      
+      document.getElementById('myForm').addEventListener('submit', handleSubmit);
 });
 
-function handleSubmit(event) {
-    if (sessionStorage.getItem('formSubmitted')) {
-      event.preventDefault();
-      document.getElementById('submitButton').disabled = true;
-      alert('Вы уже отправляли эту форму ранее.');
-    } else {
-      sessionStorage.setItem('formSubmitted', 'true');
-    }
-  }
-  
-  document.getElementById('myForm').addEventListener('submit', handleSubmit);
